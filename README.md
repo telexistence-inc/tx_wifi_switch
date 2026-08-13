@@ -13,6 +13,28 @@ firmware image, using values you pass on the command line. If that
 area has never been written, the firmware falls back to the defaults
 built into the .ino.
 
+
+## Flashing Process
+
+1. Unzip the "FW_Flash" folder anywhere.
+2. Plug the ESP32 in via USB.
+3. Open Command Prompt, `cd` into the unzipped folder.
+4. Find the COM port: Device Manager -> Ports (COM & LPT).
+5. Run:
+   ```
+   flash.bat COM5 MyWiFiName MyWiFiPassword 192.168.1.50 192.168.1.1
+   ```
+   (subnet is optional, defaults to 255.255.255.0 — add it as a 6th
+   argument if needed)
+6. Press and hold the Black Button on-board while plugging in the Board.
+7. Please hold the button until "Connecting....." text disappears.
+8. After successful flashing of Firmware, the SSID,IP of is displayed.
+
+The script will install Python/pip/esptool automatically if they
+aren't already present, then flash the firmware and configuration
+together in single step.
+
+
 ## When Firmware needs a change
 Arduino IDE (or arduino-cli) with the ESP32 core installed 
 is require, to re-generate the base firmware binaries:
@@ -38,22 +60,3 @@ Zip up this whole folder. It should contain:
 - `WifiConnect_configurable.ino.bin`
 
 
-## Flashing Process
-
-1. Unzip the "FW_Flash" folder anywhere.
-2. Plug the ESP32 in via USB.
-3. Open Command Prompt, `cd` into the unzipped folder.
-4. Find the COM port: Device Manager -> Ports (COM & LPT).
-5. Run:
-   ```
-   flash.bat COM5 MyWiFiName MyWiFiPassword 192.168.1.50 192.168.1.1
-   ```
-   (subnet is optional, defaults to 255.255.255.0 — add it as a 6th
-   argument if needed)
-6. Press and hold the Black Button on-board while plugging in the Board.
-7. Please hold the button until "Connecting....." text disappears.
-8. After successful flashing of Firmware, the SSID,IP of is displayed.
-
-The script will install Python/pip/esptool automatically if they
-aren't already present, then flash the firmware and configuration
-together in single step.
