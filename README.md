@@ -34,13 +34,7 @@ Then use a browser or any HTTP client to navigate to:
 
 ## Flashing Process
 
-1. Open the sketch in the Arduino IDE or PlatformIO.
-2. Make sure the ESP32 board package is installed.
-3. Update the Wi-Fi credentials in the sketch(If required):
-   - `ssid`
-   - `password`
-4. Optionally change the static IP configuration (if needed) :
-   - `local_IP`
-   - `gateway`
-   - `subnet`
-5. Upload the sketch to the ESP32.
+1. Clone the repository in Local
+2. Make sure the esptool is installed.
+3. Open cmd from the folder location and run "Flash.bat <YOUR COM PORT NUMBER>
+4. The pre-exisitng bin files will be flashed automatically.
