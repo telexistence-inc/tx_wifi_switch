@@ -1,0 +1,10 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "C:\\Users\\AbishekArjun\\AppData\\Local\\Arduino15\\libraries",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:esp32wrover:UploadSpeed=921600,FlashFreq=80,FlashMode=qio,PartitionScheme=custom,DebugLevel=none,EraseFlash=none",
+  "hardwareFolders": "C:\\Users\\AbishekArjun\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.11,C:\\Users\\AbishekArjun\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.11",
+  "otherLibrariesFolders": "C:\\Users\\AbishekArjun\\Documents\\Arduino\\libraries",
+  "sketchLocation": "C:\\projects\\Wifi_switch_flasher_test\\WifiConnect_configurable"
+}
