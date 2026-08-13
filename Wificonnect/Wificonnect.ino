@@ -5,7 +5,7 @@
 const char* ssid = "txLogiMesh";
 const char* password = "2017tx11";
 
-IPAddress local_IP(192, 168, 50, 73);
+IPAddress local_IP(192, 168, 50, 139);
 IPAddress gateway(192, 168, 50, 1);
 IPAddress subnet(255, 255, 255, 0);
 
