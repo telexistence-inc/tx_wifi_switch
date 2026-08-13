@@ -4,6 +4,8 @@ This lets an end user flash the switch firmware AND set their own
 SSID, password, and static IP — using only `flash.bat` and a COM port,
 no Arduino IDE or compiler required on their machine.
 
+Firmware Zip Link : https://drive.google.com/drive/folders/1mxhdhA-9Q0kN2ptq4r5xRM_Nv9DDxiGB?usp=sharing
+
 ## How it works
 
 The firmware no longer has SSID/password/IP hardcoded. Instead, at
