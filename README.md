@@ -22,7 +22,7 @@ built into the .ino.
 4. Find the COM port: Device Manager -> Ports (COM & LPT).
 5. Run:
    ```
-   flash.bat COM5 MyWiFiName MyWiFiPassword 192.168.1.50 192.168.1.1
+   flash.bat COM5 MyWiFiName MyWiFiPassword 192.168.50.134 192.168.50.1
    ```
    (subnet is optional, defaults to 255.255.255.0 — add it as a 6th
    argument if needed)
